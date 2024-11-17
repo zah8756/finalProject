@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #CAF0F8;
+  min-height: 900px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #03045E;
+}
+
+#nav ul li {
+    float: left;
+}
+
+#nav  ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#nav  ul li a:hover,
+#nav .active {
+    background-color: rgb(141, 141, 141);
+
+  text-align: center;
+}
+
+#logo{
+  margin-left: auto;
+  margin-right: auto;
+  height: 260px;
+  text-align: center;
+  display: block;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#backdrop{
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  background:linear-gradient(to bottom, rgba(27, 87, 122, 0.562), transparent),
+  url(../images/background.jpg);
+
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#news{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2em;
+  background-color: #90E0EF;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+
+}
+.ui-tabs-panel #subtitle{
+  display:none;
+}
+
+#booking{
+  padding-top:2%;
+  text-align: center;
+}
+
+#bookingButton{
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  background-color: #0452a0;
+  text-decoration: none;
+  box-shadow: 0 9px #999;
+  padding: 10px 10px;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 100px;
+}
+
+#bookingButton:hover{
+  background-color: #003366;
+}
+#bookingButton:active,.buttons:active{
+  background-color: #003366;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.indexMove{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.indexMove .imgContainer:hover , .indexMove .imgContainer:active{
+  background-color: #003366;
+}
+
+.imgContainer {
+
+    width: 300px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00B4D8;
+    text-align: center;
+    box-shadow: -8px 9px 11px 4px #006385;
+    border-radius: 10px;
+    color:black;
+}
+
+.responsive,#bigPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+  padding: 7px;
+}
+
+#imgHolder{
+  width:100%;
+  height:10.4vh;
+  overflow-x:scroll;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  padding-top: 4%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+
+#imgHolder::-webkit-scrollbar {
+  display: none;
+}
+
+#imageCon{
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+
+}
+
+.imgA{
+  border:0;
+  cursor: pointer;
+  width: 100px;
+  height: 75px;
+  opacity: 0.6;
+}
+
+#imgHolder .inActive{
+  opacity: 0.6;
+}
+
+.imgA:hover,
+#imgHolder .active{
+  opacity:1;
+}
+
+.prev,
+.next {
+
+position: absolute;
+bottom: 54%;
+cursor: pointer;
+width: auto;
+padding: 16px;
+font-weight: bold;
+font-size: .8em;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+.next {
+  right: 15%;
+  border-radius: 3px 0 0 3px;
+  }
+
+.prev{
+  left: 15%;
+}
+  
+ 
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+#largeImg{
+  width:100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  
+}
+
+#bigPic{
+  width: 21vh;
+  height: 100%;
+}
+
+#cap{
+  text-align: center;
+  background-color: #222;
+  padding: 10px 0px;
+  color: white;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+}
+
+#contianerData{
+  margin-bottom:2%;
+  max-width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blurb {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  font-size: 2.0rem;
+  background-color: #00B4D8;
+  box-shadow: -5px 5px 5px 2px #006385;
+  max-width: 70%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+
+.blurb p{
+  font-weight: bold;
+}
+
+#activites,#seabaseInfo{
+  margin-left: auto;
+  margin-right: auto;
+}
+#islandInfo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 2.0rem;
+}
+
+.left,.right,.leftAlt{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.righty{
+  float:right;
+  margin-right: 8%;
+}
+
+.link{
+  text-decoration: none;
+  text-align: center;
+  background-color: #0407a7;
+  display: inline-block;
+  padding: 5px;
+  border-radius:10px;
+  color: white;
+  box-shadow: 0px 1px 2px 0px #00027a8c;
+  margin-bottom: 5px;
+}
+
+.link:hover, .link:active{
+  background-color: #2528ac;
+}
+
+.link p{
+  margin: 0;
+}
+
+#seabaseInfo, #fishing{
+  margin-bottom:100px;
+}
+
+.background{
+  padding-bottom:1%;
+  padding-top:1%;
+  background-color: #90E0EF;
+}
+
+.backgroundCon{
+  margin-top:2%;
+  margin-bottom:2%;
+  max-width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#backgroundImg{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-bottom: 2%;
+}
+#backgroundImg img{
+  width: 100%;
+}
+
+
+.backgroundC,.comments, #orderForm,#imageCon{
+  background-color: #00B4D8;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-bottom: 4%;
+  box-shadow: -8px 9px 11px 4px #006385;
+  border-radius: 10px;
+}
+
+.backgroundC h2{
+  text-align: center;
+}
+ .backgroundC p{
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .comments{
+   line-height: 170%;
+   padding-left: 20px;
+   max-width: 640px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom:100px;
+ }
+
+ .comments textarea {
+	width: 90%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 10px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	transition: all 0.5s;
+	margin-top: 15px;
+}
+
+.buttons{
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  background-color: #0452a0;
+  text-decoration: none;
+  box-shadow: 0 9px #999;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: none;
+  letter-spacing: 4px;
+}
+.buttons:hover{
+  background-color: #003366;
+ }
+
+ #orderForm{
+  margin-left: auto;
+  margin-right: auto;
+   max-width: 700px;
+   padding: 20px;
+ }
+
+ #map {
+  width: 100%;
+  height: 600px;
+  background-color: grey;
+}
+#mapCon{
+  width: 100%;
+  height: 100%;
+}
+#constrainer{
+  max-width:70%;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table img{
+  max-width: 200px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  #bigPic{
+    width: 50vh;
+    height: 40vh;
+  }
+  .prev,
+  .next {
+    bottom: 40%;
+  }
+
+  .next{
+    right:30%;
+  }
+
+  .prev{
+    left:30%;
+  }
+
+  #imageCon{
+    width: 60%;
+  }
+
+  #constrainer{
+    max-width:50%;
+  }
+
+  #backgroundImg{
+    width: 500px;
+  }
+
+  .left,.right{
+    margin-left: 20px;
+    margin-right:0 ;
+  }
+
+  .leftAlt{
+    margin-left:0;
+    margin-right:20px ;
+  }
+
+  .link{
+    padding: 20px;
+  }
+
+  #contianerData , .backgroundCon{
+    max-width: 70%;
+  }
+
+  #activites,#seabaseInfo{
+    margin-right: 0;
+  }
+  #islandInfo{
+    margin-left: 0;
+  }
+
+
+
+  .blurb {
+    flex-direction: row;
+
+  }
+  #news{
+    flex-direction: row;
+  }
+
+  .imgContainer{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
