@@ -21,7 +21,7 @@
 
 <script src="./assets/scripts/mapSet.js"></script>
 <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3M9e_Lo1sTvFf4GwNKU7hQZ-7KSsmyx8&callback=initMap&v=weekly">
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly">
 </script>
 
 <?php
